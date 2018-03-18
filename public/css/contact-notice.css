@@ -1,0 +1,57 @@
+.contact-notice {
+  background-color:#f6f6f6;
+  position: relative;
+  padding: 50px 100px;
+}
+
+/*******************************************
+==============Notices====================
+********************************************/
+
+.notice .notice-list {
+  height: 400px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.notice h2 {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.notice-link {
+  background-color: #f6f6f6;
+  color: #495057;
+  transition: background-color 1s, color 1s;
+}
+
+.notice-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.days-ago {
+  width: 60px;
+}
+
+/*******************************************
+==============Contact US====================
+********************************************/
+
+.contact {
+  height: 420px;
+  /* border: 1px solid black; */
+}
+
+.contact h2 {
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.contact p {
+  line-height: 1.3;
+}

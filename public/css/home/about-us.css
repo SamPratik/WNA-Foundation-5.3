@@ -1,0 +1,26 @@
+.about-us {
+  background-color: #f6f6f6;
+  /* position: relative;
+  top:500px; */
+  padding: 100px 0px;
+  position:relative;
+  z-index:100;
+}
+
+.about-us h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.about-us p {
+  text-align: center;
+  /* font-family: Montserrat; */
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}

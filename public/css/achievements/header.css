@@ -1,0 +1,13 @@
+header {
+  position: relative;
+}
+
+.achievements-header-caption {
+  position: absolute;
+  font-weight: bold;
+  bottom: 10px;
+  left: 40px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
