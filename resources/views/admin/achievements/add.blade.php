@@ -52,9 +52,9 @@
   </div>
 @endsection
 
-@component('components.success-alert')
-
-@endcomponent
+{{-- Success alert --}}
+<div id="snackbar">
+</div>
 
 {{-- storing achievement in database --}}
 @push('scripts')
