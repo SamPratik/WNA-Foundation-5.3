@@ -90,7 +90,7 @@
 @endsection
 
 
-@if(Auth::check())@auth
+@if(Auth::check())
     <!-- About us update modal -->
     <div id="aboutUsUpdateModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg">
