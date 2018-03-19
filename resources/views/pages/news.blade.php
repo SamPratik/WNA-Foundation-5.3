@@ -27,9 +27,9 @@
     <div id="news" class="container">
       <p>
         {{ $news->links() }}
-        @auth
+        @if(Auth::check())
         <button class="btn btn-outline-primary pull-right" onclick="window.location.href='{{ route('news.create') }}'"><i class="fa fa-plus" aria-hidden="true"></i> Add News</button>
-        @endauth
+        @endif
         <p style="clear:both;"></p>
       </p>
       @php
@@ -49,10 +49,10 @@
                 <h5 class="card-title">{{ (strlen($new->title) > 10) ? substr($new->title, 0, 10) . '...' : $new->title }} <small class="pull-right">{{ $new->updated_at }}</small></h5>
                 <p class="card-text">{{ $new->summary }}</p>
                 <a href="{{ route('news.show', $new->id) }}" class="btn btn-outline-primary pull-right"><i class="fa fa-info-circle"></i> Read More</a>
-                @auth
+                @if(Auth::check())
                 <button onclick="deleteNews({{ $new->id }})" style="margin-right:5px;" class="btn btn-outline-danger pull-right" type="button" name="button"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
                 <button onclick="window.location.href='{{ route('news.edit', [$new->id]) }}'" style="margin-right:5px;" class="btn btn-outline-warning pull-right" type="button" name="button"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
-                @endauth
+                @endif
               </div>
             </div>
           </div>
@@ -72,9 +72,10 @@
   @includeif('partials.contact-notice', ['notices' => $notices])
 @endsection
 
-@component('components.success-alert')
-	News deleted successfully!
-@endcomponent
+{{-- Success Alert --}}
+<div id="snackbar">
+  News deleted successfully!
+</div>
 
 {{-- delete news ajax request to news.destroy --}}
 @push('scripts')

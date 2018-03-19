@@ -54,9 +54,10 @@
   </div>
 @endsection
 
-@component('components.success-alert')
+{{-- Success Alert --}}
+<div id="snackbar">
+</div>
 
-@endcomponent
 
 {{-- storing news in database --}}
 @push('scripts')
