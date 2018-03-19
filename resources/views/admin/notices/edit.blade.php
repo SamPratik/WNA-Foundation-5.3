@@ -40,9 +40,12 @@
   </div>
 @endsection
 
-@component('components.success-alert')
+
+{{-- success alert message --}}
+<div id="snackbar">
 	Notice has been updated successfully!
-@endcomponent
+</div>
+
 
 {{-- updating  --}}
 @push('scripts')

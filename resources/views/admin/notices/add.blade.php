@@ -115,9 +115,9 @@
 @endpush
 
 {{-- success alert message --}}
-@component('components.success-alert')
+<div id="snackbar">
 	Notice has been added successfully!
-@endcomponent
+</div>
 
 {{-- tinyMCE scripts --}}
 @push('scripts')
