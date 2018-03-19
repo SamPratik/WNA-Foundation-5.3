@@ -55,9 +55,10 @@
   </div>
 @endsection
 
-@component('components.success-alert')
-	Work updated successfully!
-@endcomponent
+{{-- Success alert --}}
+<div id="snackbar">
+	Work has been added successfully!
+</div>
 
 @push('scripts')
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

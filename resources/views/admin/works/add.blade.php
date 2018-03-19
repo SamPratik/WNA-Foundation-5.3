@@ -56,15 +56,17 @@
   </div>
 @endsection
 
-{{-- success alert message --}}
-@component('components.success-alert')
-	Work has been added successfully!
-@endcomponent
 
-{{-- fail alert message --}}
-@component('components.fail-alert')
+{{-- Success alert --}}
+<div id="snackbar">
+	Work has been added successfully!
+</div>
+
+{{-- Fail alert --}}
+<div id="snackbarFail">
 	You cannot add more than 3 works!
-@endcomponent
+</div>
+
 
 {{-- storing work in database --}}
 @push('scripts')
